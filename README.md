@@ -182,12 +182,12 @@ Each ablation configuration listed in the "Component Analysis on VisDrone2019" t
 
 ### 🏃‍♂️Training 
 
-The `train.py` script supports flexible model training without modifying source code. All ablation model configuration files are stored in the `cfg/` directory. Users can load different network structures by switching model yaml files using `model = YOLO('cfg/GF-YOLO.yaml')`. The dataset is specified via the data argument in the training function. For VisDrone2019, configure `data="E://python_program//visdrone_yolo//VisDrone2019.yaml"`; for the DOTA dataset, use the official yaml file `ultralytics/cfg/datasets/DOTAv1.5.yaml`. Replace GF-YOLO.yaml with other configuration files under the cfg folder to reproduce each ablation experiment. Please update all absolute dataset paths to your local directory before execution. Example core code in train.py: 
+The `train.py` script supports flexible model training without modifying source code. All ablation model configuration files are stored in the `cfg/` directory. Users can load different network structures by switching model yaml files using `model = YOLO('cfg/GF-YOLO.yaml')`. The dataset is specified via the data argument in the training function. For VisDrone2019, configure `data="ultralytics/cfg/datasets/DOTAv1.5.yaml"`; for the DOTA dataset, use the official yaml file `ultralytics/cfg/datasets/DOTAv1.5.yaml`. Replace GF-YOLO.yaml with other configuration files under the cfg folder to reproduce each ablation experiment. Please update all absolute dataset paths to your local directory before execution. Example core code in train.py: 
 
 ```
 model = YOLO('cfg/GF-YOLO.yaml') 
 
-model.train(  data="E://python_program//visdrone_yolo//VisDrone2019.yaml"...... )
+model.train(  data="ultralytics/cfg/datasets/DOTAv1.5.yaml"...... )
 ```
 
 
