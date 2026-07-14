@@ -8,7 +8,7 @@ if __name__ == '__main__':
     model = YOLO('cfg/GF-YOLO.yaml')
     
     model.train(
-        data="E://python_program//visdrone_yolo//VisDrone2019.yaml",
+        data="ultralytics/cfg/datasets/VisDrone2019.yaml",
         epochs=200,
         batch=16,
         imgsz=640,
