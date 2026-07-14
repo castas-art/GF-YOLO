@@ -72,37 +72,6 @@ These augmentations were applied on-the-fly during training (i.e., dynamically g
 
 No explicit data preprocessing was performed on the VisDrone2019 and DOTA datasets. Both datasets were  used with their original official splits and annotation formats as provided by the dataset creators.  Input images were resized on-the-fly by the YOLOv8 data loader to the model's default input resolution  during both training and inference. 
 
-## ⚡ Performance Results
-
-### Main Results on VisDrone2019
-
-|         Model          | mAP50 | mAP50:95 | Params | GFLOPs |
-| :--------------------: | :---: | :------: | :----: | :----: |
-|     Faster  R-CNN      | 35.8  |   19.7   |   -    |   -    |
-|      Sparse  DETR      | 42.5  |   27.3   |   -    | 121.0  |
-| Vectorized  IOU-YOLOv5 | 44.6  |   26.6   |  19.3  |   -    |
-|       UN-YOLOv5s       | 40.5  |   22.5   |   -    |  37.4  |
-|      YOLOv7-tiny       | 35.0  |   18.5   |  6.04  |  13.3  |
-|        YOLOv8s         | 40.4  |   24.0   |  11.1  |  28.7  |
-|  Drone-YOLO  (large)   | 40.7  |    -     |  76.2  |   -    |
-|        EBO-YOLO        | 41.1  |    -     |  8.0   |  20.4  |
-|        EdgeYOLO        | 44.8  |    -     |  40.5  | 109.1  |
-|       BDP-YOLOs        | 45.0  |   27.4   |  5.8   |  36.7  |
-|       LRDS-YOLO        | 43.6  |   26.6   |  4.07  |  23.7  |
-|        GF-YOLO         | 44.9  |   27.9   |  2.3   |  23.5  |
-
-
-
-### Generalization Results on DOTA
-
-|  Model   | *mAP*@0.5/% | *mAP*@0.5:0.95/% | Params/M |
-| :------: | :---------: | :--------------: | :------: |
-| YOLOv8n  |    40.9     |       24.6       |   3.0    |
-| YOLOv11n |    39.7     |       24.6       |   2.6    |
-| YOLOv8s  |    44.2     |       27.2       |   11.2   |
-| YOLOv11s |    44.0     |       27.7       |   9.5    |
-| GF-YOLO  |    46.6     |       28.6       |   2.3    |
-
 ## Environment
 
 The project was developed and tested under the following environment:
@@ -165,7 +134,7 @@ hsv_s=0.7,
 hsv_v=0.4,
 ```
 
-## 📁 Repository Structure
+### 📁 Repository Structure
 
 ├── cfg/                     # Model configuration files for each ablation variant 
 
@@ -195,7 +164,7 @@ hsv_v=0.4,
 
 ├── train.py                 # Main training script
 
-## 🔬 Ablation Experiment Configuration Mapping
+### 🔬 Ablation Experiment Configuration Mapping
 
 Each ablation configuration listed in the "Component Analysis on VisDrone2019" table corresponds to a YAML file in `cfg/` and a results folder in `Experiments data/` with the same name (A–G):
 
@@ -223,7 +192,38 @@ model.train(  data="E://python_program//visdrone_yolo//VisDrone2019.yaml"...... 
 
 
 
-## 🔬 Ablation Studies
+## ⚡ Performance Results
+
+### Main Results on VisDrone2019
+
+|         Model          | mAP50 | mAP50:95 | Params | GFLOPs |
+| :--------------------: | :---: | :------: | :----: | :----: |
+|     Faster  R-CNN      | 35.8  |   19.7   |   -    |   -    |
+|      Sparse  DETR      | 42.5  |   27.3   |   -    | 121.0  |
+| Vectorized  IOU-YOLOv5 | 44.6  |   26.6   |  19.3  |   -    |
+|       UN-YOLOv5s       | 40.5  |   22.5   |   -    |  37.4  |
+|      YOLOv7-tiny       | 35.0  |   18.5   |  6.04  |  13.3  |
+|        YOLOv8s         | 40.4  |   24.0   |  11.1  |  28.7  |
+|  Drone-YOLO  (large)   | 40.7  |    -     |  76.2  |   -    |
+|        EBO-YOLO        | 41.1  |    -     |  8.0   |  20.4  |
+|        EdgeYOLO        | 44.8  |    -     |  40.5  | 109.1  |
+|       BDP-YOLOs        | 45.0  |   27.4   |  5.8   |  36.7  |
+|       LRDS-YOLO        | 43.6  |   26.6   |  4.07  |  23.7  |
+|        GF-YOLO         | 44.9  |   27.9   |  2.3   |  23.5  |
+
+
+
+### Generalization Results on DOTA
+
+|  Model   | *mAP*@0.5/% | *mAP*@0.5:0.95/% | Params/M |
+| :------: | :---------: | :--------------: | :------: |
+| YOLOv8n  |    40.9     |       24.6       |   3.0    |
+| YOLOv11n |    39.7     |       24.6       |   2.6    |
+| YOLOv8s  |    44.2     |       27.2       |   11.2   |
+| YOLOv11s |    44.0     |       27.7       |   9.5    |
+| GF-YOLO  |    46.6     |       28.6       |   2.3    |
+
+### 🔬 Ablation Studies
 
 ### Component Analysis on VisDrone2019
 
