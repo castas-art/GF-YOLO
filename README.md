@@ -209,16 +209,15 @@ Each ablation configuration listed in the "Component Analysis on VisDrone2019" t
 
 
 
-## 🏃‍♂️ Reproducing Ablation Study Results
+## 🏃‍♂️Training
+The `train.py` script supports flexible model training without modifying source code. All ablation model configuration files are stored in the `cfg/` directory. Users can load different network structures by switching model yaml files using `model = YOLO('cfg/GF-YOLO.yaml')`. The dataset is specified via the data argument in the training function. For VisDrone2019, set `data="E://python_program//visdrone_yolo//VisDrone2019.yaml"`, while the DOTA dataset uses `ultralytics/cfg/datasets/DOTAv1.5.yaml`. Replace GF-YOLO.yaml with other configuration files under the cfg folder to reproduce each ablation experiment. Please update all absolute dataset paths to your local directory before running the code.
 
-To reproduce any ablation variant (e.g., variant G, the full GF-YOLO model), run `train.py` with the corresponding YAML file from `cfg/`:
-
-```
-bash   python train.py --cfg cfg/GF-YOLO.yaml   
-```
-
-Replace `GF-YOLO.yaml` with `A.yaml`, `B.yaml`, ..., `F.yaml` to reproduce the other ablation configurations listed in the table above. Corresponding training logs, weights, and evaluation results for each run are saved under `Experiments data/<config_name>/`.
-
+Example core code snippet in train.py:
+```python
+model = YOLO('cfg/GF-YOLO.yaml')
+model.train(
+    data="E://python_program//visdrone_yolo//VisDrone2019.yaml",
+)
 ## 🔬 Ablation Studies
 
 ### Component Analysis on VisDrone2019
