@@ -1,0 +1,58 @@
+========== Environment Information ==========
+
+Python version: 3.10.18
+Operating System: Windows-10-10.0.26200-SP0
+CUDA available: True
+CUDA version: 11.8
+cuDNN version: 8700
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+
+========== nvidia-smi output ==========
+Mon Jul 13 22:57:40 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.97                 Driver Version: 580.97         CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4050 ...  WDDM  |   00000000:01:00.0  On |                  N/A |
+| N/A   45C    P0             13W /   75W |    1907MiB /   6141MiB |     13%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            5960    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A            6044    C+G   ...ice\root\Office16\WINWORD.EXE      N/A      |
+|    0   N/A  N/A            8224    C+G   ...ogram Files\Typora\Typora.exe      N/A      |
+|    0   N/A  N/A            8792    C+G   ...4__w2gh52qy24etm\Nahimic3.exe      N/A      |
+|    0   N/A  N/A            8844    C+G   ...2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A            9404    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
+|    0   N/A  N/A           11868    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           12344    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A           12516    C+G   ...indows\System32\ShellHost.exe      N/A      |
+|    0   N/A  N/A           12632    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           12692    C+G   ...acted\runtime\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A           13456    C+G   ...em32\ApplicationFrameHost.exe      N/A      |
+|    0   N/A  N/A           13772    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           14452    C+G   ...ows\System32\NahimicSvc64.exe      N/A      |
+|    0   N/A  N/A           14688    C+G   ...ffice6\promecefpluginhost.exe      N/A      |
+|    0   N/A  N/A           15500    C+G   ...IA App\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           15892    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A           17156    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A           17172    C+G   ...onsoftware\RadeonSoftware.exe      N/A      |
+|    0   N/A  N/A           20704    C+G   ....0.4078.65\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           22996    C+G   ...8bbwe\PhoneExperienceHost.exe      N/A      |
+|    0   N/A  N/A           23400    C+G   ...5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A           23700    C+G   ...adeonsoftware\AMDRSSrcExt.exe      N/A      |
+|    0   N/A  N/A           24484    C+G   ....0.4078.65\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           26292    C+G   ...s\Mozilla Firefox\firefox.exe      N/A      |
+|    0   N/A  N/A           29760    C+G   ...es\Microsoft VS Code\Code.exe      N/A      |
+|    0   N/A  N/A           31040    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           31916    C+G   ...s\Mozilla Firefox\firefox.exe      N/A      |
+|    0   N/A  N/A           32264    C+G   ...on 2024.2.4\bin\pycharm64.exe      N/A      |
++-----------------------------------------------------------------------------------------+
