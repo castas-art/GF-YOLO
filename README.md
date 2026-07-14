@@ -30,7 +30,7 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 
 ```
 
-<img src="Model Architecture.png" alt="picture" style="zoom:25%;" />
+<img src="Model Architecture.png" alt="picture2" style="zoom:25%;" />
 
 
 
@@ -54,7 +54,7 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 - **Classes**: 15 object categories
 - **Characteristics**: Multi-scale, oriented objects
 
-### Data Preprocessing / Augmentation
+### Data  Augmentation
 
 During training, several online data augmentation strategies were applied to the input images to improve model generalization and robustness:
 
@@ -68,7 +68,9 @@ During training, several online data augmentation strategies were applied to the
 
 These augmentations were applied on-the-fly during training (i.e., dynamically generated at each epoch rather than precomputed and stored), and are configured via the training pipeline (see `train.py` and the corresponding YAML configuration files in `cfg/`). No additional offline preprocessing (e.g., manual cropping, denoising, or normalization beyond the standard YOLO input pipeline) was applied to the VisDrone2019 and DOTA datasets.
 
+### Data  Augmentation
 
+No explicit data preprocessing was performed on the VisDrone2019 and DOTA datasets. Both datasets were  used with their original official splits and annotation formats as provided by the dataset creators.  Input images were resized on-the-fly by the YOLOv8 data loader to the model's default input resolution  during both training and inference. 
 
 ## ⚡ Performance Results
 
@@ -87,7 +89,7 @@ These augmentations were applied on-the-fly during training (i.e., dynamically g
 |        EdgeYOLO        | 44.8  |    -     |  40.5  | 109.1  |
 |       BDP-YOLOs        | 45.0  |   27.4   |  5.8   |  36.7  |
 |       LRDS-YOLO        | 43.6  |   26.6   |  4.07  |  23.7  |
-|        GF-YOLO         | 45.0  |   27.9   |  2.3   |  23.5  |
+|        GF-YOLO         | 44.9  |   27.9   |  2.3   |  23.5  |
 
 
 
@@ -181,7 +183,7 @@ hsv_v=0.4,
 
 │   └── GF-YOLO.yaml               # Full model (GF-YOLO) 
 
-├── Experiments data/ Comparison experiments 
+├── Experiments data/         Training/validation data and logs corresponding to each variant 
 
 │   ├── A/ 
 
@@ -209,15 +211,16 @@ Each ablation configuration listed in the "Component Analysis on VisDrone2019" t
 
 
 
-## 🏃‍♂️Training
-The `train.py` script supports flexible model training without modifying source code. All ablation model configuration files are stored in the `cfg/` directory. Users can load different network structures by switching model yaml files using `model = YOLO('cfg/GF-YOLO.yaml')`. The dataset is specified via the data argument in the training function. For VisDrone2019, set `data="E://python_program//visdrone_yolo//VisDrone2019.yaml"`, while the DOTA dataset uses `ultralytics/cfg/datasets/DOTAv1.5.yaml`. Replace GF-YOLO.yaml with other configuration files under the cfg folder to reproduce each ablation experiment. Please update all absolute dataset paths to your local directory before running the code.
+### 🏃‍♂️Training 
 
-Example core code snippet in train.py:
-```python
-model = YOLO('cfg/GF-YOLO.yaml')
-model.train(
-    data="E://python_program//visdrone_yolo//VisDrone2019.yaml",
-)
+The `train.py` script supports flexible model training without modifying source code. All ablation model configuration files are stored in the `cfg/` directory. Users can load different network structures by switching model yaml files using `model = YOLO('cfg/GF-YOLO.yaml')`. The dataset is specified via the data argument in the training function. For VisDrone2019, configure `data="E://python_program//visdrone_yolo//VisDrone2019.yaml"`; for the DOTA dataset, use the official yaml file `ultralytics/cfg/datasets/DOTAv1.5.yaml`. Replace GF-YOLO.yaml with other configuration files under the cfg folder to reproduce each ablation experiment. Please update all absolute dataset paths to your local directory before execution. Example core code in train.py: 
+
+```
+model = YOLO('cfg/GF-YOLO.yaml') 
+
+model.train(  data="E://python_program//visdrone_yolo//VisDrone2019.yaml"...... )
+```
+
 
 
 ## 🔬 Ablation Studies
