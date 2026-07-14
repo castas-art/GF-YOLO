@@ -5,237 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fbe9b9f-38ea-4e06-9838-5e3a7284fc11" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/BoxF1_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/BoxPR_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/BoxP_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/BoxR_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/args.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/confusion_matrix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/confusion_matrix_normalized.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/results.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/results.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/val_batch0_pred.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/val_batch1_pred.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/val_batch2_pred.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/weights/best.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/weights/epoch0.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/weights/epoch100.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/weights/epoch150.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/weights/epoch50.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/weights/last.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/labels_correlogram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/train_batch0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/train_batch1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/train_batch2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/train_batch510.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/train_batch511.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/train_batch512.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/val_batch0_labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/val_batch1_labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/val_batch2_labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/BoxF1_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/BoxPR_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/BoxP_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/BoxR_curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/args.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/confusion_matrix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/confusion_matrix_normalized.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/labels_correlogram.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/results.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/train_batch0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/train_batch1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/train_batch2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/train_batch255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/train_batch256.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/train_batch257.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/val_batch0_labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/val_batch0_pred.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/val_batch1_labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/val_batch1_pred.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/val_batch2_labels.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/val_batch2_pred.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/weights/best.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/weights/epoch0.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/weights/epoch100.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/weights/epoch150.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/weights/epoch50.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/weights/last.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/yolov8n.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/YOLOv8n/微信截图_20250715134825.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cfg/E.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cfg/F.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GF-YOLO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GF-YOLO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/BoxF1_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/BoxF1_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/BoxPR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/BoxPR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/BoxP_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/BoxP_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/BoxR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/BoxR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/args.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/args.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/confusion_matrix_normalized.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/confusion_matrix_normalized.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/labels_correlogram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/labels_correlogram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/train_batch0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/train_batch0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/train_batch1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/train_batch1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/train_batch2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/train_batch2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/train_batch510.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/train_batch510.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/train_batch511.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/train_batch511.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/train_batch512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/train_batch512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/val_batch0_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/val_batch0_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/val_batch0_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/val_batch0_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/val_batch1_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/val_batch1_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/val_batch1_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/val_batch1_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/val_batch2_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/A/val_batch2_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +GFF/val_batch2_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/val_batch2_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/BoxF1_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/BoxF1_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/BoxPR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/BoxPR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/BoxP_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/BoxP_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/BoxR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/BoxR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/args.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/args.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/confusion_matrix_normalized.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/confusion_matrix_normalized.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/labels_correlogram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/labels_correlogram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/train_batch0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/train_batch0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/train_batch1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/train_batch1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/train_batch2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/train_batch2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/train_batch510.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/train_batch510.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/train_batch511.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/train_batch511.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/train_batch512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/train_batch512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/val_batch0_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/val_batch0_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/val_batch0_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/val_batch0_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/val_batch1_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/val_batch1_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/val_batch1_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/val_batch1_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/val_batch2_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/val_batch2_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE+GHF/val_batch2_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/F/val_batch2_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/BoxF1_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/BoxF1_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/BoxPR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/BoxPR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/BoxP_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/BoxP_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/BoxR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/BoxR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/args.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/args.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/confusion_matrix_normalized.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/confusion_matrix_normalized.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/labels_correlogram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/labels_correlogram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/train_batch0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/train_batch0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/train_batch1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/train_batch1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/train_batch2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/train_batch2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/train_batch510.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/train_batch510.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/train_batch511.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/train_batch511.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/train_batch512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/train_batch512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/val_batch0_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/val_batch0_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/val_batch0_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/val_batch0_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/val_batch1_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/val_batch1_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/val_batch1_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/val_batch1_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/val_batch2_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/val_batch2_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5 +SCE/val_batch2_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/C/val_batch2_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/BoxF1_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/BoxF1_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/BoxPR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/BoxPR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/BoxP_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/BoxP_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/BoxR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/BoxR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/args.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/args.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/confusion_matrix_normalized.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/confusion_matrix_normalized.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/labels_correlogram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/labels_correlogram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/train_batch0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/train_batch0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/train_batch1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/train_batch1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/train_batch2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/train_batch2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/train_batch510.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/train_batch510.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/train_batch511.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/train_batch511.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/train_batch512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/train_batch512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/val_batch0_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/val_batch0_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/val_batch0_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/val_batch0_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/val_batch1_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/val_batch1_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/val_batch1_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/val_batch1_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/val_batch2_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/D/val_batch2_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5+Dyhead/val_batch2_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/val_batch2_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/BoxF1_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/BoxF1_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/BoxPR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/BoxPR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/BoxP_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/BoxP_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/BoxR_curve.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/BoxR_curve.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/args.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/args.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/confusion_matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/confusion_matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/confusion_matrix_normalized.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/confusion_matrix_normalized.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/labels_correlogram.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/labels_correlogram.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/train_batch0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/train_batch0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/train_batch1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/train_batch1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/train_batch2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/train_batch2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/train_batch510.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/train_batch510.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/train_batch511.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/train_batch511.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/train_batch512.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/train_batch512.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/val_batch0_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/val_batch0_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/val_batch0_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/val_batch0_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/val_batch1_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/val_batch1_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/val_batch1_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/val_batch1_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/val_batch2_labels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/E/val_batch2_labels.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments data/Comparison experiments/yolov8+P2+deleteP5/val_batch2_pred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Experiments data/Comparison experiments/B/val_batch2_pred.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/en/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/en/quickstart.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_python.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v10/yolov10b.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v10/yolov10l.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v10/yolov10m.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v10/yolov10n.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v10/yolov10s.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v10/yolov10x.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/BIFPN+SRF.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/BIFPN+dyhead+SRF+dysample.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/BIFPN+dyhead+SRF.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/BIFPN+dyhead.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/BIFPN.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/GF-YOLO.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/GF-YOLO.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/yolov8+P2-P5+SRF.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/C.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/yolov8+P2-P5.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/B.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/yolov8+P2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/A.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8.0/yolov8.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/yolov8.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8/BIFPN.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/D.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8/BIFPN2.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v8/yolov8-add-2.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9c-seg.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9c.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9e-seg.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9e.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9m.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9s.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/cfg/models/v9/yolov9t.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/nn/AddModel/DWCONV.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/AddModel/DWCONV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/nn/AddModel/Fusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/AddModel/Fusion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/nn/modules/block.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/modules/block.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/nn/modules/conv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/modules/conv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/nn/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/Opt_Flow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/basetrack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/bot_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/byte_tracker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/bytetrack官方代码.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/track.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/utils/gmc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/utils/kalman_filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/utils/matching.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultralytics/trackers/utils/卡尔曼滤波官方文件.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/002.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -268,19 +40,21 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="3GFVHbsMo66IrgLcpDNniOCvlvn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.003.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/14471/Desktop/英文论文投稿/GF-YOLO/Experiments data/Comparison experiments&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.003.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/14471/Desktop/英文论文投稿/GF-YOLO/Experiments data/Comparison experiments",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\14471\Desktop\英文论文投稿\GF-YOLO\Experiments data\Comparison experiments" />
@@ -337,5 +111,12 @@
       <updated>1783567217063</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Initial commit: source code for paper" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
