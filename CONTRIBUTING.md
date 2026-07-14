@@ -1,4 +1,4 @@
-# GF-YOLO: Enhanced Small Object Detection for UAV Aerial Imagery
+# ‎Title –Improved YOLOv8n model for efficient aerial object detection
 
 ## 📝 Overview
 
@@ -30,7 +30,7 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 
 ```
 
-![图片2](C:\Users\14471\Desktop\图片2.png)
+<img src="Model Architecture.png" alt="picture2" style="zoom:25%;" />
 
 
 
@@ -49,9 +49,28 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 ### Validation Dataset
 
 - **Dataset**: DOTA (Dataset for Object Detection in Aerial Images)
+- **Source**: https://github.com/ultralytics/assets/releases/download/v0.0.0/DOTAv1.zip
 - **Purpose**: Generalization ability validation
 - **Classes**: 15 object categories
 - **Characteristics**: Multi-scale, oriented objects
+
+### Data  Augmentation
+
+During training, several online data augmentation strategies were applied to the input images to improve model generalization and robustness:
+
+| Augmentation Strategy      | Parameter                                               |
+| -------------------------- | ------------------------------------------------------- |
+| Mosaic augmentation        | probability = 1.0 (disabled during the last 190 epochs) |
+| Mixup augmentation         | ratio = 0.0 (not applied)                               |
+| HSV color augmentation     | hue = 0.015, saturation = 0.7, value = 0.4              |
+| Random horizontal flipping | probability = 0.5                                       |
+| Random scaling             | range = 0.5                                             |
+
+These augmentations were applied on-the-fly during training (i.e., dynamically generated at each epoch rather than precomputed and stored), and are configured via the training pipeline (see `train.py` and the corresponding YAML configuration files in `cfg/`). No additional offline preprocessing (e.g., manual cropping, denoising, or normalization beyond the standard YOLO input pipeline) was applied to the VisDrone2019 and DOTA datasets.
+
+### Data  Augmentation
+
+No explicit data preprocessing was performed on the VisDrone2019 and DOTA datasets. Both datasets were  used with their original official splits and annotation formats as provided by the dataset creators.  Input images were resized on-the-fly by the YOLOv8 data loader to the model's default input resolution  during both training and inference. 
 
 ## ⚡ Performance Results
 
@@ -70,13 +89,13 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 |        EdgeYOLO        | 44.8  |    -     |  40.5  | 109.1  |
 |       BDP-YOLOs        | 45.0  |   27.4   |  5.8   |  36.7  |
 |       LRDS-YOLO        | 43.6  |   26.6   |  4.07  |  23.7  |
-|        GF-YOLO         | 44.9  |   27.9   |  2.3   |  23.0  |
+|        GF-YOLO         | 45.0  |   27.9   |  2.3   |  23.5  |
 
 
 
 ### Generalization Results on DOTA
 
-|   模型   | *mAP*@0.5/% | *mAP*@0.5:0.95/% | Params/M |
+|  Model   | *mAP*@0.5/% | *mAP*@0.5:0.95/% | Params/M |
 | :------: | :---------: | :--------------: | :------: |
 | YOLOv8n  |    40.9     |       24.6       |   3.0    |
 | YOLOv11n |    39.7     |       24.6       |   2.6    |
@@ -84,22 +103,39 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 | YOLOv11s |    44.0     |       27.7       |   9.5    |
 | GF-YOLO  |    46.6     |       28.6       |   2.3    |
 
+## Environment
+
+The project was developed and tested under the following environment:
+
+### System Environment
+
+| Component | Version |
+| --------- | ------- |
+| Python    | 3.9     |
+| CUDA      | 11.8    |
+
+### Python Dependencies
+
+torch==2.3.0
+torchvision==0.18.0
+Pillow==9.5.0
+opencv-python==4.12.0.88
+lap==0.5.12
+matplotlib==3.10.6
+mmcv==2.2.0
+mmengine==0.10.7
+numpy==2.2.6
+pandas==2.3.2
+psutil==7.1.0
+pytest==9.0.2
+requests==2.32.5
+scipy==1.15.3
+thop==0.1.1-2209072238
+timm==1.0.20
+tqdm==4.67.1
+PyYAML==6.0.2
+
 ## 🛠️ Implementation Details
-
-### Key Components
-
-####  Global Feature Fusion (GFF)
-
-```python
-class GFF(nn.Module):
-    """Global Feature Fusion combining MFF and WFF modules"""
-    def __init__(self, channels):
-        super(GFF, self).__init__()
-        self.mff = MFF(channels)  # Multi-scale Feature Fusion
-        self.wff = WFF(channels)  # Weighted Feature Fusion
-```
-
-
 
 ### Training Configuration
 
@@ -129,11 +165,67 @@ hsv_s=0.7,
 hsv_v=0.4,
 ```
 
+## 📁 Repository Structure
+
+├── cfg/                     # Model configuration files for each ablation variant 
+
+│   ├── A.yaml               # P2 layer added 
+
+│   ├── B.yaml               # P2 + P5 removed 
+
+│   ├── C.yaml               # + SCE 
+
+│   ├── D.yaml               # + GFF 
+
+│   ├── E.yaml               # + DyHead 
+
+│   ├── F.yaml               # SCE + GFF 
+
+│   └── GF-YOLO.yaml               # Full model (GF-YOLO) 
+
+├── Experiments data/         Training/validation data and logs corresponding to each variant 
+
+│   ├── A/ 
+
+│   ├── B/ 
+
+│   ├── ... 
+
+│   └── GF-YOLO/ 
+
+├── train.py                 # Main training script
+
+## 🔬 Ablation Experiment Configuration Mapping
+
+Each ablation configuration listed in the "Component Analysis on VisDrone2019" table corresponds to a YAML file in `cfg/` and a results folder in `Experiments data/` with the same name (A–G):
+
+| Config  | cfg file         | Experiments data folder | Modules enabled                   |
+| ------- | ---------------- | ----------------------- | --------------------------------- |
+| A       | cfg/A.yaml       | Experiments data/A/     | P2                                |
+| B       | cfg/B.yaml       | Experiments data/B/     | P2 + Delete P5                    |
+| C       | cfg/C.yaml       | Experiments data/C/     | P2 + Delete P5 + SCE              |
+| D       | cfg/D.yaml       | Experiments data/D/     | P2 + Delete P5 + GFF              |
+| E       | cfg/E.yaml       | Experiments data/E/     | P2 + Delete P5 + DyHead           |
+| F       | cfg/F.yaml       | Experiments data/F/     | P2 + Delete P5 + SCE + GFF        |
+| GF-YOLO | cfg/GF-YOLO.yaml | Experiments data/G/     | Full model (P2+P5+SCE+GFF+DyHead) |
+
+
+
+## 🏃‍♂️ Reproducing Ablation Study Results
+
+To reproduce any ablation variant (e.g., variant G, the full GF-YOLO model), run `train.py` with the corresponding YAML file from `cfg/`:
+
+```
+bash   python train.py --cfg cfg/GF-YOLO.yaml   
+```
+
+Replace `GF-YOLO.yaml` with `A.yaml`, `B.yaml`, ..., `F.yaml` to reproduce the other ablation configurations listed in the table above. Corresponding training logs, weights, and evaluation results for each run are saved under `Experiments data/<config_name>/`.
+
 ## 🔬 Ablation Studies
 
 ### Component Analysis on VisDrone2019
 
-|  Model  |  P2  | Delete P5 | SCE  | GHF  | DyHead | P    | R    | mAP50 | mAP50:95 | Params | GFLOPs |
+|  Model  |  P2  | Remove P5 | SCE  | GHF  | DyHead | P    | R    | mAP50 | mAP50:95 | Params | GFLOPs |
 | :-----: | :--: | :-------: | :--: | :--: | :----: | ---- | ---- | ----- | -------- | ------ | ------ |
 | YOLOv8n |      |           |      |      |        | 44.5 | 32.8 | 33.0  | 19.3     | 3.0    | 8.9    |
 |    A    |  √   |           |      |      |        | 48.7 | 35.6 | 37.1  | 22.3     | 2.9    | 12.4   |
@@ -142,44 +234,25 @@ hsv_v=0.4,
 |    D    |  √   |     √     |      |  √   |        | 48.8 | 36.2 | 37.9  | 22.8     | 1.1    | 12.5   |
 |    E    |  √   |     √     |      |      |   √    | 52.4 | 39.9 | 41.7  | 25.3     | 2.0    | 17.4   |
 |    F    |  √   |     √     |  √   |  √   |        | 51.6 | 40.4 | 42.0  | 25.4     | 1.2    | 16.2   |
-|    G    |  √   |     √     |  √   |  √   |   √    | 54.5 | 42.0 | 44.9  | 27.9     | 2.3    | 23.0   |
+|    G    |  √   |     √     |  √   |  √   |   √    | 54.5 | 42.0 | 44.9  | 27.9     | 2.3    | 23.5   |
 
-## 🏃‍♂️ Quick Start
 
-### Dataset Preparation
-
-```bash
-# Download VisDrone2019 dataset
-wget https://github.com/VisDrone/VisDrone-Dataset
-python tools/prepare_visdrone.py --data_path ./datasets/VisDrone2019
-
-# Download DOTA dataset (for generalization test)
-python tools/prepare_dota.py --data_path ./datasets/DOTA
-```
-
-### Training
-
-```bash
-# Train GF-YOLO on VisDrone2019
-python train.py --data configs/VisDrone.yaml --cfg configs/gf-yolo.yaml --epochs 200
-
-# Resume training
-python train.py --data configs/VisDrone.yaml --cfg ultralytics/cfg/models/v8.0/GF-YOLO.yaml --resume 
-```
 
 ## 📈 Visualization Results
 
 ### Detection Examples on VisDrone2019
 
-![comparison](C:\Users\14471\Downloads\comparison.png)
+<img src="comparison.png" alt="comparison.png" style="zoom:50%;" />
 
 
 
-<img src="C:\Users\14471\Desktop\yolo论文\运行结果2.0\改进后的终极版\BoxF1_curve.png" alt="BoxF1_curve" style="zoom:50%;" />
+<img src="confusion_matrix_normalized.png" alt="confusion matrix" style="zoom:50%;" />
 
-![BoxPR_curve](C:\Users\14471\Desktop\yolo论文\运行结果2.0\改进后的终极版\BoxPR_curve.png)
 
-![confusion_matrix_normalized](C:\Users\14471\Desktop\yolo论文\运行结果2.0\改进后的终极版\confusion_matrix_normalized.png)
+
+
+
+
 
 ## 🔬 Technical Contributions
 
@@ -196,6 +269,65 @@ python train.py --data configs/VisDrone.yaml --cfg ultralytics/cfg/models/v8.0/G
 - Reduced parameter count through strategic layer removal
 - Efficient feature fusion without significant computational overhead
 
+
+
+## Citations
+
+If you use this code or the datasets in your research, please cite the following:
+
+**This work:**
+
+> Junkai Yi, Bobin Cui, Lingling Tan, and Xuefeng Gao. "Improved YOLOv8n model for efficient aerial object detection." PeerJ Computer Science, 2026.
+
+**VisDrone2019 dataset:**
+
+> Zhu, P., Wen, L., Du, D., Bian, X., Fan, H., Hu, Q., & Ling, H. (2021). Detection and Tracking Meet Drones Challenge. IEEE Transactions on Pattern Analysis and Machine Intelligence, 44(11), 7380–7399.
+
+```bibtex
+@article{zhu2021detection,  
+  title={Detection and tracking meet drones challenge},  
+  author={Zhu, Pengfei and Wen, Longyin and Du, Dawei and Bian, Xiao and Fan, Heng and Hu, Qinghua and Ling, Haibin},  
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},  
+  volume={44},  
+  number={11},  
+  pages={7380--7399},  
+  year={2021},  
+  publisher={IEEE}  
+}  
+```
+
+**DOTA dataset:**
+
+> Ding, J., Xue, N., Xia, G. S., Bai, X., Yang, W., Yang, M., Belongie, S., Luo, J., Datcu, M., Pelillo, M., & Zhang, L. (2021). Object Detection in Aerial Images: A Large-Scale Benchmark and Challenges. IEEE Transactions on Pattern Analysis and Machine Intelligence.
+
+```
+@ARTICLE{9560031,
+  author={Ding, Jian and Xue, Nan and Xia, Gui-Song and Bai, Xiang and Yang, Wen and Yang, Michael and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title={Object Detection in Aerial Images: A Large-Scale Benchmark and Challenges},
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TPAMI.2021.3117983}
+}
+```
+
+## 📜 License & Contribution Guidelines
+
+**License:** This project is released under the [MIT License](LICENSE) .
+
+**Dataset Licenses:**
+
+- VisDrone2019 is released for academic research purposes only. Please refer to the [VisDrone official license](http://aiskyeye.com/) for usage terms.
+- DOTA is released for academic and research use. Please refer to the [DOTA official terms](https://captain-whu.github.io/DOTA/) for usage details.
+
+**Contributions:** Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](chrome-extension://dhoenijjpgpeimemopealfcbiecgceod/standalone.html?from=sidebar#) or submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+
+
+
+
 ## 📄 Data Availability Statement
 
 **For Journal Submission**: The experimental results in this work are based on publicly available datasets:
@@ -203,20 +335,10 @@ python train.py --data configs/VisDrone.yaml --cfg ultralytics/cfg/models/v8.0/G
 - **VisDrone2019 Dataset**: Available at http://aiskyeye.com/ (primary evaluation dataset)
 - **DOTA Dataset**: Available at https://captain-whu.github.io/DOTA/ (generalization validation)
 - No new datasets were generated during this study
-- All source code, model configurations, and trained weights are available in this repository: https://github.com/[username]/GF-YOLO
+- All source code, model configurations, and trained weights are available in this repository: https://github.com/castas-art/GF-YOLO.git
 - Detailed experimental protocols and hyperparameters are provided for full reproducibility
 
-## 📜 Citation
 
-```bibtex
-@article{gf_yolo_2025,
-  title={Improved YOLOv8n Model for Efficient Aerial Object Detection},
-  author={[Junkai Yi, Bobin Cui, Lingling Tan, Xuefeng Gao},
-  journal={[Signal, Image and Video Processing]},
-  year={2025},
-  note={Under review}
-}
-```
 
 ## 🔗 Related Work
 
