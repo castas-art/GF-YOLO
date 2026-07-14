@@ -218,6 +218,8 @@ model = YOLO('cfg/GF-YOLO.yaml')
 model.train(
     data="E://python_program//visdrone_yolo//VisDrone2019.yaml",
 )
+
+
 ## 🔬 Ablation Studies
 
 ### Component Analysis on VisDrone2019
