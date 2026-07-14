@@ -30,7 +30,7 @@ This repository contains the implementation of **GF-YOLO**, an improved YOLO mod
 
 ```
 
-<img src="Model Architecture.png" alt="图片2" style="zoom:25%;" />
+<img src="Model Architecture.png" alt="picture" style="zoom:25%;" />
 
 
 
@@ -181,7 +181,7 @@ hsv_v=0.4,
 
 │   └── GF-YOLO.yaml               # Full model (GF-YOLO) 
 
-├── Experiments data/         Training/validation data and logs corresponding to each variant 
+├── Experiments data/ Comparison experiments 
 
 │   ├── A/ 
 
