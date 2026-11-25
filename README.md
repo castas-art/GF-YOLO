@@ -277,9 +277,6 @@ model.train(  data="ultralytics/cfg/datasets/DOTAv1.5.yaml"...... )
 
 If you use this code or the datasets in your research, please cite the following:
 
-**This work:**
-
-> Junkai Yi, Bobin Cui, Lingling Tan, and Xuefeng Gao. "Improved YOLOv8n model for efficient aerial object detection." PeerJ Computer Science, 2026.
 
 **VisDrone2019 dataset:**
 
